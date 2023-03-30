@@ -1,0 +1,197 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+} */
+
+.body-container {
+
+  display: flex;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005b8a;
+  color: white;
+  padding: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2d3d;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.social a:hover {
+  color: #ffc857;
+}
+
+.fab {
+  font-size: 1.5rem;
+}
+
+/* starting --- for the social icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-right: 1rem;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Facebook icon */
+.social-icons a:nth-child(1) i:before {
+  content: "\f39e";
+}
+
+/* Twitter icon */
+.social-icons a:nth-child(2) i:before {
+  content: "\f099";
+}
+
+/* LinkedIn icon */
+.social-icons a:nth-child(3) i:before {
+  content: "\f0e1";
+}
+
+/* Instagram icon */
+.social-icons a:nth-child(4) i:before {
+  content: "\f16d";
+}
+
+/* ending --- for the social icons */
+
+/* starting --- for navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  /* Align navbar to the left */
+  margin-bottom: 1rem;
+  background-color: #f2f2f2;
+  height: 90vh;
+  /* Set height to 100% */
+  width: 20vh;
+}
+
+.navbar ul {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  /* Center the links horizontally */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  height: inherit;
+}
+
+.navbar li {
+  margin: 0 0.5rem;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1 a {
+  color: white;
+}
+
+h1 a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 a:focus {
+  outline: none;
+}
+
+.displayflex {
+  display: flex;
+}
+
+.displayinlineblock {
+  display: inline-block;
+}
+
+/* ending --- for navbar */
