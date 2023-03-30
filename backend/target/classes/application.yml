@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bankmgmtsys
+    username: root
+    password: Swas@1112
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        hbm2ddl: auto
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    hibernate:
+      hbm2ddl: auto
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+server:
+  port: 8081
+jwt:
+  secret: secretkey123
